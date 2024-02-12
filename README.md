@@ -1,2 +1,2 @@
-# heart-platformer
+# HeartPlatformer
  
