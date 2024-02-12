@@ -4,3 +4,4 @@ res://player.gd
 res://player.tscn
 res://DefaultMovementData.tres
 res://FasterMovementData.tres
+res://spikes.tscn
