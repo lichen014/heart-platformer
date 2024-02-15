@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://world.gd" id="1_qtyhm"]
 [ext_resource type="PackedScene" uid="uid://dfrwm588egccl" path="res://player.tscn" id="2_tgogd"]
-[ext_resource type="Texture2D" uid="uid://xpejqgvhtwsu" path="res://spikes.png" id="3_8xxon"]
+[ext_resource type="PackedScene" uid="uid://baumf8tghjuqa" path="res://spikes.tscn" id="3_125hw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fk3ep"]
 size = Vector2(22, 52)
@@ -16,7 +16,7 @@ collision_mask = 0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(0, 4.54747e-13)
 scale = Vector2(0.924479, 0.885865)
-polygon = PackedVector2Array(0, 0, 24, 0, 25.9606, 90.3072, 69.2282, 90.3072, 80, 120, 112, 120, 136, 96, 164.417, 99.3379, 164.417, 144.492, 192, 144, 190.378, 99.3379, 232, 96, 232, 112, 294.22, 90.3072, 294.22, 117.399, 328.834, 117.399, 328.834, 8.61237e-06, 352.09, -1.30681, 352.09, -1.30681, 384, 0, 384, 184, 384, 192, 0, 192)
+polygon = PackedVector2Array(0, 0, 24, 0, 25.9606, 90.3072, 59.493, 95.9514, 80, 120, 112, 120, 136.293, 99.3379, 159.008, 98.2091, 160.09, 145.62, 190.378, 144.492, 190.378, 99.3379, 232, 96, 232, 112, 294.22, 90.3072, 294.22, 117.399, 328.834, 117.399, 328.834, 8.61237e-06, 352.09, -1.30681, 352.09, -1.30681, 384, 0, 384, 184, 384, 192, 0, 192)
 
 [node name="Polygon2D" type="Polygon2D" parent="StaticBody2D/CollisionPolygon2D"]
 
@@ -24,7 +24,6 @@ polygon = PackedVector2Array(0, 0, 24, 0, 25.9606, 90.3072, 69.2282, 90.3072, 80
 position = Vector2(40, 48)
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
-collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 position = Vector2(262, 26)
@@ -35,18 +34,14 @@ offset_left = 250.0
 offset_right = 274.0
 offset_bottom = 52.0
 
-[node name="Spikes" type="Sprite2D" parent="."]
-position = Vector2(168, 120)
-texture = ExtResource("3_8xxon")
+[node name="Spikes" parent="." instance=ExtResource("3_125hw")]
+position = Vector2(147, 131)
 
-[node name="Spikes2" type="Sprite2D" parent="."]
-position = Vector2(160, 120)
-texture = ExtResource("3_8xxon")
+[node name="Spikes2" parent="." instance=ExtResource("3_125hw")]
+position = Vector2(161, 131)
 
-[node name="Spikes3" type="Sprite2D" parent="."]
-position = Vector2(296, 96)
-texture = ExtResource("3_8xxon")
+[node name="Spikes3" parent="." instance=ExtResource("3_125hw")]
+position = Vector2(272, 105)
 
-[node name="Spikes4" type="Sprite2D" parent="."]
-position = Vector2(280, 96)
-texture = ExtResource("3_8xxon")
+[node name="Spikes4" parent="." instance=ExtResource("3_125hw")]
+position = Vector2(288, 105)
