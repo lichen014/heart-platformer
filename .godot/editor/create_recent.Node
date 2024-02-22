@@ -1,12 +1,13 @@
-TileMap
+CollisionPolygon2D
 CanvasLayer
-Node
-Label
 ColorRect
+AnimationPlayer
+Node
+TileMap
+Label
 CenterContainer
 CollisionShape2D
 Sprite2D
 Area2D
-CollisionPolygon2D
 Camera2D
 StaticBody2D
