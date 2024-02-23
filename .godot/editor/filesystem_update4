@@ -1,11 +1,5 @@
+res://start_menu.tscn
 res://level_transition.tscn
-res://level_transition.gd
-res://level_one.tscn
-res://world.gd
 res://world.tscn
-res://world_copy.tscn
-res://level_completed.tscn
-res://level_two.tscn
-res://hazard_area.tscn
 res://player.tscn
-res://player.gd
+res://start_menu.gd
