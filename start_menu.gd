@@ -3,8 +3,8 @@ extends CenterContainer
 @onready var start_game_button = %StartGameButton
 
 func _ready():
+	RenderingServer.set_default_clear_color(Color.BLACK)
 	start_game_button.grab_focus()
-	pass
 
 func _on_start_game_button_pressed():
 	await LevelTransition.fade_to_black()

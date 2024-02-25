@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bc6tauni53kg6"]
+[gd_scene load_steps=5 format=3 uid="uid://bc6tauni53kg6"]
 
 [ext_resource type="Script" path="res://start_menu.gd" id="1_ab2ip"]
 [ext_resource type="FontFile" uid="uid://foevg6kberu4" path="res://pixel_font.ttf" id="2_hunhc"]
+[ext_resource type="StyleBox" uid="uid://ctqkhppgqteh7" path="res://white_9slice.tres" id="3_xiv3j"]
+[ext_resource type="StyleBox" uid="uid://betau8mqwu151" path="res://black_9slice.tres" id="4_7xt3f"]
 
 [node name="StartMenu" type="CenterContainer"]
 anchors_preset = 15
@@ -16,11 +18,17 @@ layout_mode = 2
 
 [node name="StartGameButton" type="Button" parent="VBoxContainer"]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(64, 16)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_hunhc")
+theme_override_styles/normal = ExtResource("3_xiv3j")
+theme_override_styles/hover = ExtResource("4_7xt3f")
+theme_override_styles/pressed = ExtResource("3_xiv3j")
+theme_override_styles/focus = ExtResource("4_7xt3f")
 text = "Start Game"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(64, 16)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_hunhc")
 text = "	Quit"
